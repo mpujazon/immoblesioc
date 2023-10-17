@@ -1,0 +1,403 @@
+/* RESET D'ESTILS BÀSICS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, footer{ 
+    /*Estableix el tipus de font*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*NAVBAR*/
+.logo{ 
+    /*Mida del logo*/
+    max-width: 220px;
+    height: auto;
+}
+
+.nav-bar{ 
+    /*Estils de la barra de navegació*/
+    width: 100%;
+    background-color: white;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 0px 20px 0px 20px;
+    border-radius: 0px 0px 30px 30px;
+    position: fixed;
+    z-index: 10;
+}
+.nav-links{ 
+    /*Estils del grup d'enllaços*/
+    display: flex;
+    justify-items: space-between;
+    flex-flow: wrap;
+}
+.nav-bar a{ 
+    /*Estils dels enllaços*/
+    color: #211435;
+    font-weight: 900;
+    text-decoration: none;
+}
+.nav-links a{
+    /*Padding dels enllaços*/
+    padding-right: 2em;
+}
+
+a:hover{ 
+    /*Estil on hover de l' anchor*/
+    text-decoration: underline;   
+}
+.nav-user{ 
+    /*Flex container elements usuari*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-icon{ 
+    /*Tamany de l'icona user*/
+    font-size: 20pt;
+}
+
+/*HEADER*/
+header{ 
+    /*Estableix imatge de fons al header i les seves propietats*/
+    background-image: url(/../images/pexels-binyamin-mellish-186077.jpg);
+    height: 500px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header-banner{
+    /*Estils del banner cercador del header*/
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #683ea6;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+}
+.header-banner h2,.header-banner label{
+    /*Canvia el color de dos elements dins del header-banner*/
+    color: white;
+}
+.header-banner a{ 
+    /*Estils dels enllaços*/
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.header-banner a:hover{
+    /*Afegeix decoració a l'anchor*/
+    text-decoration: underline;
+}
+.cercador{
+    /*Dimensions i posicionament del cercador*/
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.filtres-cercador{
+    /*Dimensions i posicionament dels filtres*/
+    display: flex;
+    justify-content: space-between;
+}
+
+/*MAIN*/
+main{
+    /*Distribució del container main*/
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;    
+}
+.blog, .destacats{
+    /*Amplada de les dues seccions de main*/
+    width: 50%;
+}
+section{
+    /*Distribució i estils del section*/
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.contingut{
+    /*Distribució del container .contingut*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+article{
+    /*Distribució i propietats del article*/
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.miniatura{
+    /*Distribució i aspecte de les miniatures*/
+    min-width: 125px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+article > a {
+    /*Estil de l'anchor dels articles*/
+    color: #211435;
+    font-weight: 900;
+    text-decoration: none;
+}
+article > p{
+    /*Estil de parraf dels articles*/
+    font-size: 15px;
+    color: #673ea6;
+}
+.preu{
+    /*Estil del .preu*/
+    font-weight: 900;
+    color: #683ea6;
+    
+}
+
+/*ASIDE*/
+aside{
+    /*Distribució i comportament de l'aside*/
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 15px;
+    border-radius: 10px;
+}
+.ioc-banner{
+    border-radius: 10px;
+}
+
+/*FOOTER*/
+.footer-container{
+    /*Propietats i estils del container footer*/
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+.social-links{
+    /*Distribució dels links de XXSS*/
+    display: flex;
+    justify-content: space-around;
+}
+
+.legal-links{
+    /*Distribució dels links legals*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-instagram,.fa-twitter{
+    /*Aspecte dels icons de XXSS*/
+    color: white;
+    font-size: 20px;
+}
+footer a{
+    /*Estil dels anchor del footer*/
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*ESTILS BÀSICS*/
+body{
+    background-color: #f6f0ff;
+}
+footer{
+    background-color: #422c64;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+button { 
+    /*Estils dels botons*/
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    background-color: #673ea6;
+}
+button:hover{
+    /*Animació botó on hover*/
+    color: #673ea6;
+    background-color: white;
+    outline: #673ea6 1px solid;
+}
+.secondary-button{
+    /*Estils dels botons secundaris*/
+    color: #673ea6;
+    background-color: white;
+}
+.secondary-button:hover{
+    /*Animació botó secundari on hover*/
+    color: white;
+    background-color: #673ea6;
+    outline: white 1px solid;
+}
+input { 
+    /*Estils dels inputs*/
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+input:checked{
+    /*Color del checkbox quan està marcat*/
+    accent-color: #673ea6;
+    outline: white 1px solid;
+}
+.menu-icon, .nav-bar > input{
+    /*Amaga checkbox menu*/
+    display: none;
+}
+
+/*Responsive*/
+@media (max-width: 1200px){ 
+    .nav-button{ 
+        /*Amaga els botons de la navbar */
+        display: none;
+    }
+    header{
+        /*Canvia l'alçada del header*/
+        height: 450px;
+    }
+}    
+
+@media (max-width: 960px){
+    /*MENÚ DE NAVEGACIÓ DESPLEGABLE*/
+    .menu-icon{
+        display: inline;
+        font-size: 18pt;
+    }
+    .nav-bar > a{
+        padding: 0px;
+    }
+
+    .nav-links{
+        /*Links del navmenu distribuits per tota la pantalla amagats*/
+        padding: 50px;
+        margin: 0px;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: none;
+        place-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .nav-links a{
+        padding-right: 0px;
+    }
+    
+    input:checked  ~ .nav-links{
+        /*Mostra el hamburger menu quan activem el check a l'icona*/
+        display: grid;
+    }
+
+    /*CANVIS D'ESTILS*/
+    .header-banner > h2{
+        /*Redueix la mida de la font de l'h2*/
+        font-size: 18px;
+    }
+    header{
+        height: 400px;
+    }
+    .cercador-checkbox{
+        display: none;
+    }
+    .filtres-cercador{
+        justify-content: center;
+    }
+    main h3{
+        font-size: 17px;
+    }
+    main h4{
+        font-size: 16px;
+    }
+    main p{
+        font-size: 14px;
+    }
+    main span{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px){
+    .logo{ 
+        /*Mida del logo*/
+        max-width: 180px;
+        height: auto;
+    }
+    .menu-icon,.user-icon{
+        font-size: 15pt;
+    }
+    
+    /*CANVIS D'ESTILS*/
+    .header-banner > h2{
+        /*Redueix la mida de la font de l'h2*/
+        font-size: 16px;
+    }
+    .header-banner{
+        width: 70%;
+    }
+    header{
+        height: 350px;
+    }
+    main h3{
+        font-size: 16px;
+    }
+    main h4{
+        font-size: 15px;
+    }
+    main p{
+        font-size: 14px;
+    }
+    main span{
+        font-size: 16px;
+    }
+    .social-links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .legal-links{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
