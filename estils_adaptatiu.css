@@ -65,7 +65,7 @@ a:hover{
 /*HEADER*/
 header{ 
     /*Estableix imatge de fons al header i les seves propietats*/
-    background-image: url(/../images/pexels-binyamin-mellish-186077.jpg);
+    background-image: url(../images/pexels-binyamin-mellish-186077.jpg);
     height: 500px;
     width: auto;
     background-size: cover;
